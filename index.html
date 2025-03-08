@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Books_List</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+ <div class="container">
+    <div class="d-flex justify-content-between align-items-center ">
+        <h1 class="display-4 my-5">
+            Add Books
+        </h1>
+        <button class="clear btn btn-dark" style="display: none;">
+            Clear All
+        </button>
+    </div>
+
+    <div class="show-alert mb-5">
+            
+    </div>
+
+    <form id="book-form" class="mb-5">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="name">
+            <label for="book-name">Add Name</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control" id="author">
+            <label for="book-author">Add Author</label>
+        </div>
+        <div class="form-floating mb-3">
+            <input type="number" class="form-control" id="isbn">
+            <label for="book-isbn">Add ISBN</label>
+        </div>
+        <button type="submit" class="btn btn-dark" id="btn-submit">Submit</button>
+    </form>
+
+    <table class="table table-striped table-hover">
+        <thead>
+            <tr>
+                <th>Name</th> 
+                <th>Author</th> 
+                <th>ISBN</th> 
+            </tr>
+            <tbody id="book-list">
+                <!-- <tr>
+                    <td>book one</td>
+                    <td>Asif</td>
+                    <td>121</td>
+                    <td class="d-flex gap-2">
+                        <span class="btn btn-warning edit">E</span>
+                        <span class="btn btn-danger delete">D</span>
+                    </td>
+                </tr> -->
+            </tbody>
+        </thead>
+    </table>
+ </div>
+ <!-- <script src="./es5.js"></script> -->
+ <script src="./es6.js"></script>
+
+</body>
+</html>
