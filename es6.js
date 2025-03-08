@@ -133,6 +133,7 @@ class Storage{
 
         if (duplicateExists) {
             document.querySelector("#btn-submit").innerText = "Add Book";
+            console.log("aaaaa");
             ui.showAlert("Book Name or ISBN already exists!", "alert-danger")
             return false;
         }
